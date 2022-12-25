@@ -78,37 +78,6 @@ namespace BarcodeEan128
 
         static EAN128Parser()
         {
-            //try
-            //{
-            //    string connectionString = "Server=192.168.1.45;Database=Codes;User Id=sa;Password=1234;";
-            //    using (SqlConnection connection = new SqlConnection(connectionString))
-            //    {
-            //        //open connection
-            //        connection.Open();
-
-            //        string selectQuery = "SELECT Id, Nombre, LongitudId, Tipo, LongitudMax, TamanioFijo FROM Ean128Codes";
-
-            //        SqlCommand command = new SqlCommand(selectQuery, connection);
-
-            //        command.Connection = connection;
-            //        command.CommandText = selectQuery;
-            //        var result = command.ExecuteReader();
-            //        //check if account exists
-            //        var exists = result.HasRows;
-            //        if (exists)
-            //        {
-                        
-            //        }
-
-
-
-
-            //    }
-            //}
-            //catch (Exception exception)
-            //{
-                   
-            //}
 
             Add("00", "SerialShippingContainerCode", 2, DataType.Numeric, 18, false);
             Add("01", "EAN-NumberOfTradingUnit", 2, DataType.Numeric, 14, false);
